@@ -1,0 +1,9 @@
+item,value,unit,note
+current_mortgage_rate,6.30,percent,Convert to decimal 0.0630 in formulas
+wac,6.492,percent,Single contract rate per Schwartz-Torous. Use for both incentive and interest cash flow
+wam,315,months,N in Simpson's rule. If odd, drop last month or use trapezoidal on final interval
+oas,104.8,bp,Discount rate per doc = (wac + oas)/12 monthly. Z-spread = OAS here, option cost ~0
+balance,78682639.93,USD,Starting balance for cash flow projection
+cpr_max,60,percent,Use 0.60 in S-curve. Vendor is implying ~17.2 CPR realized - if defaults give ~10 CPR, calibrate k or x0 to match
+k,2.0,unitless,Slope. Default range 1.5-2.5 per doc
+x0,1.0,percent,Inflection. Use 1.0 in S-curve formula in same units as x
