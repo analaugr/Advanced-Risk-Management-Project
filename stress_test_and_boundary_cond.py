@@ -256,7 +256,7 @@ def main() -> None:
         writer.writeheader()
         writer.writerows(rows)
 
-    print(f"\nSaved full results to: {output_file}")
+    print(f"\nFind full results to: {output_file}")
 
 
 if __name__ == "__main__":
